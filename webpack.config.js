@@ -15,6 +15,17 @@ module.exports = {
                 options: {
                     sources: false
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: '/styles.css$/',
+                
             }
         ]
     },
@@ -24,7 +35,8 @@ module.exports = {
     plugins: [
         new HtmlWebPack({
             title: 'WebPack App',
-            filename: 'index.html'
+            // filename: 'index.html',
+            template: './src/index.html'
         })
     ],
 };

@@ -4,14 +4,18 @@
   "description": "pruebas de desarrollo con webpack",
   "main": "index.js",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js --open --port=15000"
   },
   "author": "Yoariht Macedo",
   "license": "ISC"
