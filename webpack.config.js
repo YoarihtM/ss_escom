@@ -34,7 +34,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebPack({
-            title: 'WebPack App',
+            title: 'Pruebas',
             // filename: 'index.html',
             template: './src/index.html'
         })

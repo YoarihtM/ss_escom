@@ -18,5 +18,8 @@
     "start": "webpack serve --config webpack.config.js --open --port=15000"
   },
   "author": "Yoariht Macedo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6"
+  }
 }
