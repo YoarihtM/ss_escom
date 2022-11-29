@@ -1,3 +1,11 @@
-export const FirstApp = () => {
-    return (<h1>First App</h1>);
+export const FirstApp = ({ title, subTitle }) => {
+
+    // console.log(props);
+
+    return (
+        <>
+            <h1>{ title }</h1>
+            <p>subtitle enviado desde el componente padre: '{ subTitle }'</p>
+        </>
+    );
 };

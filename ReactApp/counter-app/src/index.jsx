@@ -5,10 +5,12 @@ import { Fragmento } from './Fragmen';
 
 import { HelloWorldApp } from './HelloWorldApp';
 
+import './styles.css';
+
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         <HelloWorldApp />
-        <FirstApp />
+        <FirstApp title="Hola, Soy Goku" subTitle="123"/>
         <Fragmento />
     </React.StrictMode>
 )
